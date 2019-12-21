@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="demo-container">
+    <div id="grid-container"></div>
+    <div class="options">
+        <div class="caption">Options</div>
+        <div class="option">
+            <span>Update frequency:</span>
+            <div id="frequency-slider"></div>
+        </div>
+    </div>
+</div>
+<script>
+    var dhistory = @Html.Raw(Json.Encode(ViewBag.downloadhis));
+       
+</script>
+<script src="~/Scripts/downloadgrid.js"></script>
+<script src="~/Scripts/downloaddata.js"></script>
